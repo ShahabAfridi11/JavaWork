@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<accounts>
+    <account number = "1">
+<accountHolderName>Shahab-U-Din</accountHolderName>
+<type>Current</type>
+<initialDeposit>2000</initialDeposit>
+<cnic>22401-5343152-1</cnic>
+<phoneNumber>0334-9346079</phoneNumber>
+<balance>2000</balance>
+<status>Opened</status>
+    </account>
+
+    <account number = "2">
+<accountHolderName>Waleed</accountHolderName>
+<type>Saving</type>
+<initialDeposit>1500</initialDeposit>
+<cnic>14301-3376146-1</cnic>
+<phoneNumber>0333-3333333</phoneNumber>
+<balance>1500</balance>
+<status>Closed</status>
+    </account>
+
+    <account number = "012341">
+<accountHolderName>Ubaid</accountHolderName>
+<type>Current</type>
+<initialDeposit>1100</initialDeposit>
+<cnic>17123-9877653-6</cnic>
+<phoneNumber>0388-2345678</phoneNumber>
+<balance>2000</balance>
+<status>Closed</status>
+    </account>
+
+    <account number = "576564">
+<accountHolderName>Arsh</accountHolderName>
+<type>Saving</type>
+<initialDeposit>2100</initialDeposit>
+<cnic>13142-2784356-3</cnic>
+<phoneNumber>0312-7865433</phoneNumber>
+<balance>1500</balance>
+<status>Active</status>
+    </account>
+
+    <account number ="123">
+<accountHolderName>Ali</accountHolderName>
+<type>Current</type>
+<cnic>1730113123941</cnic>
+<initialDeposit>1500</initialDeposit>
+<phoneNumber>03129968572</phoneNumber>
+<balance>2000</balance>
+<status>Closed</status>
+    </account>
+
+    <account number ="412">
+<accountHolderName>Usman</accountHolderName>
+<type>Saving</type>
+<cnic>1730145252453</cnic>
+<initialDeposit>500</initialDeposit>
+<phoneNumber>030152524512</phoneNumber>
+<balance>1000</balance>
+<status>Active</status>
+    </account>
+
+    <account number="768567">
+<accountHolderName>Shakir</accountHolderName>
+<type>current</type>
+<initialDeposit>1000</initialDeposit>
+<cnic>15603-0405805-2</cnic>
+<phoneNumber>03441900988</phoneNumber>
+<balance>9000</balance>
+<states>closed</states>
+    </account>
+
+    <account number="56789">
+<accountHolderName>Abbas</accountHolderName>
+<type>Saving</type>
+<initialDeposit>4000</initialDeposit>
+<cnic>17403-3984984-5</cnic>
+<phoneNumber></phoneNumber>
+<balance>34567</balance>
+<states>closed</states>
+    </account>
+
+    <account number ="123">
+<accountHolderName>Raza</accountHolderName>
+<type>Cuurent</type>
+<intialDeposit>2000</intialDeposit>
+<cnic>21203-9876632-4</cnic>
+<phoneNumber>0314-8765439</phoneNumber>
+<balance>5000</balance>
+<status>Closed</status>  
+    </account>
+
+    <account number ="45678">
+<accountHolderName>Ahmad</accountHolderName>
+<type>Saving</type>
+<intialDeposit>3000</intialDeposit>
+<cnic>21203-9941024-5</cnic>
+<phoneNumber>0313-9166493</phoneNumber>
+<balance>10000</balance>
+<status>Open</status>    
+    </account>
+
+    <account number = "123456789">
+<accountHolderName>"Shuja"</accountHolderName>
+<cnic> "15201-9987654-3" </cnic>
+<initialDeposit> 3000</initialDeposit>   
+<balance> 350</balance>
+<type> "Student" </type>
+<phoneNumber> 03450583043 </phoneNumber>
+<status> "Active" </status>
+    </account>
+
+    <account number = "9876543210">
+<accountHolderName>"Shaab" </accountHolderName>
+<cnic> "12345678905"</cnic>
+<initialDeposit>321</initialDeposit>   
+<balance> 1000</balance>
+<type> "Current" </type>
+<phoneNumber> 03404536733 </phoneNumber>
+<status> "close"</status>
+    </account>
+
+</accounts>

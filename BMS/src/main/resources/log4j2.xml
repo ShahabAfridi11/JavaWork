@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" strict="true" name="XMLConfiguration">
+    <Properties>
+        <Property name="filename">logs/java-course.log</Property>
+    </Properties>
+    <Filter type="ThresholdFilter" level="trace"/>
+
+    <Appenders>
+        <Appender type="Console" name="STDOUT">
+            <Layout type="PatternLayout" pattern="[%-5level] %d{HH:mm:ss} %c [%L] - %m%n" />
+            <!-- Layout type="PatternLayout" pattern="[%-5level] %d{HH:mm:ss} %c : [%L] - %m%n" />
+            <Layout type="PatternLayout" pattern="%C{1}.%M %m %ex%n" />
+            <Layout type="PatternLayout" pattern="%d %p %C{1.} [%t] %m%n" / -->
+            <Filters>
+                <Filter type="MarkerFilter" marker="FLOW" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="DENY" onMismatch="ACCEPT"/>
+            </Filters>
+        </Appender>
+        <Appender type="Console" name="FLOW">
+            <Layout type="PatternLayout" pattern="%C{2}.%M %m %ex%n" /><!-- class and line number -->
+            <Filters>
+                <Filter type="MarkerFilter" marker="FLOW" onMatch="ACCEPT" onMismatch="NEUTRAL"/>
+                <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </Appender>
+        <Appender type="File" name="FILE" fileName="${filename}">
+            <Layout type="PatternLayout">
+                <Pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %c [%L] - %m%n</Pattern>
+            </Layout>
+        </Appender>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="consoleLogger" level="info" additivity="false">
+            <Filter type="ThreadContextMapFilter">
+                <KeyValuePair key="test" value="123"/>
+            </Filter>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+ 
+        <Logger name="fileLogger" level="debug" additivity="false">
+            <AppenderRef ref="FILE"/>
+        </Logger>
+ 
+        <Root level="trace">
+            <AppenderRef ref="STDOUT" level="info" />
+            <AppenderRef ref="FILE" level="debug" />
+        </Root>
+    </Loggers>
+</Configuration>

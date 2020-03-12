@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listOfAccounts> 
+  <account number="1"> 
+    <accountHolderName>shahab</accountHolderName>  
+    <type>Current</type>  
+    <initialDeposit>1500.0</initialDeposit>  
+    <cnic>22401-5343152-1</cnic>  
+    <phoneNumber>03349346079</phoneNumber>  
+    <balance>10.0</balance>  
+    <status>Opened</status> 
+  </account> 
+</listOfAccounts>
